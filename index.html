@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,35 +17,35 @@
                 <center>
                     <fieldset id="borda">
                         <legend id="legend">Preencha com os dados para adicionar um novo produto</legend><br><br><br>
-                            <form id="form" method="GET" action="salvar.php" enctype="multipart/form-data" onsubmit>
-                                <label for="select" id="slct">Categorias</label>
-                                <select id="select" name="select">
+                            <form id="form" action="salvar.php" onsubmit="return validar()" method="GET">
+                                <label for="selecionar" id="slct">Categorias</label>
+                                <select id="select" name="selecionar">
                                     <option value="Selecione...">Selecione...</option>
                                     <option value="Alimentos">Alimentos</option>
                                     <option value="Bebidas">Bebidas</option>
                                     <option value="Objetos">Objetos</option>
                                     <option value="Gerais">Gerais</option>
                                 </select><br><br><br>
-                                <label for="nome" id="nm">Nome </label>
-                                <input id="nome" name="nome" type="text"><br><br><br>
-                                <label for="preco" id="prc">Preço </label>
-                                <input id="preco" name="preco" type="double" placeholder="00.00"><br><br><br>
-                                <label for="quantidade" id="qtd">Quantidade </label>
-                                <input id="quantidade" name="quantidade" type="int"><br><br><br>
-                                <label for="data" id="dt">Data de validade </label>
-                                <input id="data" name="data" type="date"><br><br><br>
-                                <br><br><br><br>
-                                <label for="imagem" id="img">Carregue uma Imagem</label>
-                                <input type="file" id="imagem" name="imagem">
-                    </fieldset><br>                              
+                                <label for="nomep" id="nm">Nome</label>
+                                <input id="nome" name="nomep" type="text"><br><br><br>
+                                <label for="precop" id="prc">Preço</label>
+                                <input id="preco" name="precop" type="double" placeholder="00.00"><br><br><br>
+                                <label for="quantidadep" id="qtd">Quantidade</label>
+                                <input id="quantidade" name="quantidadep" type="int"><br><br><br>
+                                <label for="datap" id="dt">Data de validade</label>
+                                <input id="data" name="datap" type="date"><br><br><br>
+                                <br><br><br>
+                                <label for="imagemp" id="img">Carregue uma Imagem</label>
+                                <input type="file" id="imagem" name="imagemp"><br><br><br>                                            
                                 <input type="submit" value="Salvar" id="salvar">
                                 <input type="reset" value="Limpar" id="limpar">
-                            </form>
+                            </form> 
+                    </fieldset>
                 </center>
                 </div>
                 <div class="Content Side"></div>
             </div>
             <div class="Footer"></div>
-            <script src="scripts.js"></script>
+            <script type="text/javascript" src="scripts.js"></script>
         </body>
 </html>
