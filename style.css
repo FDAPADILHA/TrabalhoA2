@@ -48,6 +48,8 @@ h2{
     text-align: center;
 }
 #legend{
+    font-family: "Times New Roman";
+    font-size: 110%;
     text-align: center;
 }
 #borda{
@@ -56,3 +58,49 @@ h2{
     width: 50%;
     height: 500px;
 }
+@media screen{
+    #nm, #slct, #img, #dt, #prc, #qtd{
+        float: left;
+        margin-left: 4px;
+        font-family: "Times New Roman";
+        font-size: 105%;
+    }
+}
+@media screen{
+    #nome, #data, #data, #preco, #quantidade, #select{
+        float: right;
+        width: 300px;
+        padding: 2px;
+        margin-right: 4px;
+        font-family: "Times New Roman";
+        font-size: 100%;
+        border: solid rgba(0, 0, 0, 0.692) 2px;
+        border-radius: 4px;
+    }
+}
+#imagem{
+    font-family: "Times New Roman";
+    border: solid rgba(0, 0, 0, 0.692) 2px;
+    border-radius: 4px;
+    padding: 2px;
+}
+#salvar{
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  #limpar{
+    background-color: rgb(226, 37, 37);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }

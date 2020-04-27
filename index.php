@@ -16,9 +16,9 @@
                     <br><h2>Formulário de cadastro</h2><br>
                 <center>
                     <fieldset id="borda">
-                        <legend id="legend">Preencha com os dados para cadastrar um novo produto</legend>
+                        <legend id="legend">Preencha com os dados para adicionar um novo produto</legend><br><br><br>
                             <form action="salvar.php" method="get" id="form">
-                                <br><br><label for="select">Categorias</label>
+                                <label for="select" id="slct">Categorias</label>
                                 <select id="select" name="select">
                                     <option value="Selecione...">Selecione...</option>
                                     <option value="Alimentos">Alimentos</option>
@@ -26,16 +26,16 @@
                                     <option value="Objetos">Objetos</option>
                                     <option value="Gerais">Gerais</option>
                                 </select><br><br><br>
-                                <label for="nome">Nome </label>
+                                <label for="nome" id="nm">Nome </label>
                                 <input id="nome" name="nome" type="text"><br><br><br>
-                                <label for="preco">Preço </label>
-                                <input id="preco" name="preco" type="double" placeholder="0.00"><br><br><br>
-                                <label for="quantidade">Quantidade </label>
+                                <label for="preco" id="prc">Preço </label>
+                                <input id="preco" name="preco" type="double" placeholder="00.00"><br><br><br>
+                                <label for="quantidade" id="qtd">Quantidade </label>
                                 <input id="quantidade" name="quantidade" type="int"><br><br><br>
-                                <label for="data">Data de validade </label>
+                                <label for="data" id="dt">Data de validade </label>
                                 <input id="data" name="data" type="date"><br><br><br>
                                 <br><br><br><br>
-                                <label for="imagem">Carregue uma Imagem</label><br><br>
+                                <label for="imagem" id="img">Carregue uma Imagem</label>
                                 <input type="file" id="imagem" name="imagem">
                     </fieldset><br>                              
                                 <input type="submit" value="Salvar" id="salvar">
