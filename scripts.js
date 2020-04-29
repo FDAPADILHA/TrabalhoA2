@@ -1,12 +1,8 @@
 function validar(){
-    /*if(x==0){
-        console.log("retornou false");
+    if(document.form.nome.value=="" || document.form.nome.value== null){
+        alert("Você não preencheu o campo Nome");
         return false;
-    }
-    else{
-        console.log("retornou false");
+    }else{
         return true;
-    }*/
-    alert("OI");
-    return false;
+    }
 }
