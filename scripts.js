@@ -43,6 +43,10 @@ var vencimento = new Date(dataValidade.getFullYear(),
         alert("Este produto possui menos de uma semana de validade");
         return false;
     }
+    if(document.form.imagem.value == "" || document.form.imagem.value == null){
+        alert("Você não inseriu uma imagem para o produto");
+        return false;
+    }
     else{
         return true;
     }
