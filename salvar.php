@@ -17,8 +17,15 @@
                     <center>
                         <fieldset id="borda">
                             <legend id="legend">Produto Cadastrado</legend><br><br><br>
-                                
+                                Categoria: <?php echo htmlspecialchars($_POST["select"]);?><br><br>
+                                Nome: <?php echo htmlspecialchars($_POST["nome"]);?><br><br>
+                                Preço: <?php echo (double)$_POST["preco"];?><br><br>
+                                Quantidade: <?php echo (int)$_POST["quantidade"];?><br><br>
+                                Data de validade: <?php echo date($_POST["data"]);?><br><br><br><br>
+                                <?php $_FILES['imagem'];
+                                        echo $_FILES['imagem']['tmp_name'];?>
                         </fieldset>
+                        <input type=button id="voltar" value="Voltar" onclick="history.go(-1)">
                     </center>
                     </div>
                     <div class="Content Side"></div>

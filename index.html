@@ -17,7 +17,7 @@
                 <center>
                     <fieldset id="borda">
                         <legend id="legend">Preencha com os dados para adicionar um novo produto</legend><br><br><br>
-                            <form name="form" id="form" action="salvar.php" method="GET" enctype="multipart/form-data" onsubmit="return validar()">
+                            <form name="form" id="form" action="salvar.php" method="POST" enctype="multipart/form-data" onsubmit="return validar()">
                                 <label for="select" id="slct">Categorias</label>
                                 <select id="select" name="select">
                                     <option value="">Selecione...</option>
@@ -35,7 +35,7 @@
                                 <label for="data" id="dt">Data de validade</label>
                                 <input id="data" name="data" type="date"><br><br><br><br><br><br>
                                 <label for="imagem" id="img">Carregue uma Imagem</label>
-                                <input type="file" id="imagem" name="imagem"><br><br><br>
+                                <input type="file" id="imagem" name="imagem" accept="image/*">
                                 <input type="submit" value="Salvar" id="salvar">
                                 <input type="reset" value="Limpar" id="limpar">
                             </form>
