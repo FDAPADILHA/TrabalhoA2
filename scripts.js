@@ -29,6 +29,20 @@ function validar(){
         document.form.quantidade.focus();
         return false;
     }
+    if(document.form.data.value == "" || document.form.data.value == null){
+        alert("Você não preencheu o campo Data de validade");
+        document.form.data.focus();
+        return false;
+    }
+var dataValidade = new Date(document.getElementById("data").value);
+var dataAtual = new Date();
+var vencimento = new Date(dataValidade.getFullYear(),
+                          dataValidade.getMonth(),
+                          dataValidade.getDate());
+    if(dataAtual.setDate(dataAtual.getDate() + 5) > vencimento){
+        alert("Este produto possui menos de uma semana de validade");
+        return false;
+    }
     else{
         return true;
     }
